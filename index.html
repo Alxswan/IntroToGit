@@ -72,16 +72,13 @@
 						</section>
 						<section>
 							<p>A program we run via the command-line...</p>
-						</section>
-							<section>
 							<img src="images/CL.png" alt="">
-							</section>
+						</section>
 						<section>
 							<p>Or with a user-interface.</p>
+							<img src="images/UI2.png" alt="">
 						</section>
-						<section>
-								<img src="images/UI2.png" alt="">
-							</section>
+
 							<section>
 								<img src="images/UI3.png" alt="">
 							</section>
@@ -95,7 +92,7 @@
 						</section>
 						<section>
 							<p>It manages the source code for your project</p>
-								<img style="border:none; box-shadow:none;"  src="images/mac.png" alt="">
+								<img style="border:none; box-shadow:none;"  src="images/lin.jpg" alt="">
 						</section>
 						<section>
 							<p>It talks to remote repositories</p>
@@ -156,6 +153,9 @@
 						<section>
 							<p>beware gitception</p>
 						</section>
+						<section >
+							<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/revolutionaries.gif" alt="">
+						</section>
 				</section>
 				<section>
 					<section>
@@ -174,16 +174,21 @@
 					<section>
 						<p>But you need to tell it to remember what you've done</p>
 					</section>
-						<section>
+
+					<section>
 						<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/elephant.png" alt="">
 						<p>Omniscient Elephant</p>
 					</section>
+
 					<section>
 						<p>A commit is a snapshot of changes</p>
 					</section>
 						<section>
 						<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/map3.jpg" alt="">
 					</section>
+					<section >
+							<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/schuyler.gif" alt="">
+						</section>
 				</section>
 				<section>
 					<section>
@@ -202,14 +207,15 @@
 					<p><code>$git add .</code></p>
 					<p><code>$git commit -m "Initial commit"</code></p>
 					</section>
-					<section>
+					
+					<!--<section>
 						<p><code>$git status</code></p>
 						<p class="fragment" data-fragment-index="1"><code>cuteboysphonenumber.txt</code></p>
 						<p class="fragment" data-fragment-index="1"><code>reasonswhycuteboyisbadnews.txt</code></p>
 						<p class="fragment" data-fragment-index="2"><code>$ git add "cuteboysphonenumber.txt"</code></p>
 						<p class="fragment" data-fragment-index="3"><code>$ git commit -m "Gets cute boy's phone number"</code></p>
 						<p class="fragment" data-fragment-index="4"><code>$ git stash</code></p>
-					</section>
+					</section>-->
 					<section>
 						<p>When to commit?</p>
 					</section>
@@ -223,27 +229,32 @@
 						<h3>What's the point?</h3>
 					</section>
 					<section>
+						<p><code>$git log</code></p>
+					</section>
+					<section>
 						<img width="100%" height="100%" style="border:none; box-shadow:none;" src="images/fire.jpg__thumb" alt="">
 					</section>
 					<section>
 						<p class="fragment">Break everything</p>
-						<p class="fragment">Put it back to it looked before you ruined it</p>
+						<p class="fragment">Put it back to how it looked before you ruined it</p>
 						<p class="fragment">Rewrite history</p>
 					</section>
-				</section>
+					<section >
+							<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/roomwhere.gif" alt="">
+						</section>
+					</section>
 					<section>
 					<h2>Part 2</h2>
 					<h3>Git for the outside world</h3>
-				</section>
-				
+				</section>		
 				<section>
 				<section>
 					<h3>git push</h3>
 				</section>
 				<section>
 					<p>Share your work with the world</p>
-					<p class="fragment">Or back it up for yourself:</p>
-					<p class="fragment">git push whereto whichbranch</p></code></pre>
+					<p class="fragment">Or back it up for yourself</p>
+					<p class="fragment"><strong>git push</strong> whereto whichbranch</p></code></pre>
 					<code class="fragment">$ git push origin master</code>
 				</section>
 				</section>
@@ -258,26 +269,30 @@
 				<section>
 					<section>
 						<h3>Workflow</h3>
+					</section>
+					<section>
+						<h4>Pushing your work to a remote repository</h4>
+						<code><p class="fragment">$git init</p></code>
+						<code><p class="fragment">$git add "README.txt"</p></code>
+						<code><p class="fragment">$git commit -m "Initial commit"</p></code>
+						<p class="fragment">(Create GitHub repo)</p>
+						<code><p class="fragment">$git remote add origin [url]</p></code>
+						<code><p class="fragment">$git push origin master</p></code>
 					</section>					
 					<section>
 						<h4>Contributing to somone else's work</h4>
-						<code><p class="fragment">$git clone url</p></code>
+						<code><p class="fragment">$git clone [url]</p></code>
 						<code><p class="fragment">$git pull</p></code>
 						<p class="fragment">*do work*</p>
 						<p class="fragment">(lots of git add, git commit)</p>
 						<code><p class="fragment">$git push</p></code>
 						<code><p class="fragment">$git merge</p></code>
-					</section>
-						<section>
-						<h4>Pushing your work to a remote repository</h4>
-						<code><p class="fragment">$git init</p></code>
-						<code><p class="fragment">$git add "README.txt"</p></code>
-						<code><p class="fragment">$git commit -m "Initial commit"</p></code>
-						<code><p class="fragment">$git remote add origin [url]</p></code>
-						<code><p class="fragment">$git push</p></code>
-					</section>
+					</section>		
 					<section>
 						<p>Gotcha: .gitignore</p>
+					</section>
+					<section>
+						<img width="100%" height="100%" style="border:none; box-shadow:none;" src="images/werk.gif" alt="">
 					</section>
 				</section>
 					<section>
@@ -304,6 +319,9 @@
 					<section>
 						<code>$ git merge NEWBRANCH</code>
 					</section>
+					<section>
+						<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/jefferson.gif" alt="">
+					</section>
 				</section>
 				<section>
 				<section>
@@ -326,7 +344,7 @@
 					<section >
 						<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/commitearly.jpg" alt="">
 					</section>
-					<section >
+					<section>
 						<img width="70%" height="70%" style="border:none; box-shadow:none;" src="images/ham.gif" alt="">
 					</section>
 				</section>
@@ -334,6 +352,8 @@
 				<section>
 					<h3>Resources</h3>
 					<ul>
+					<li><a href="https://ja.atlassian.com/dms/wac/images/.../git/atlassian_git_cheatsheet.pdf">Cheatsheet from Atlassian</a></li>
+						<li><a href="https://www.atlassian.com/git/glossary">Glossary from Atlassian</a></li>
 						<li><a href="http://think-like-a-git.net/">Think Like (a) Git</a></li>
 						<li><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>
 						<li><a href="https://try.github.io/levels/1/challenges/1">Try Git</a></li>
